@@ -1,0 +1,90 @@
+.navbar-container{
+    display:block;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: darksalmon;
+    height: auto;
+    padding: 0;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+li {
+    float: right;
+    color: maroon;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: rgba(182, 88, 57, 0.808);
+    color: white;
+    font-weight: bold;
+}
+
+#home{
+    float: left;
+    padding: 10px 5% 10px 10px;
+}
+
+#home::after {
+    content: " - Sarika Islam"
+}
+
+.drop-menu{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    padding: 4px;
+    color:white;
+    background-color: brown;
+    width: 10%;
+}
+
+@media screen and (max-width: 650px){
+
+    #home::after {
+        display:none;
+    }
+
+}
+
+
+@media screen and (max-width: 530px){
+    .navbar{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.363) ;
+    }
+
+    .nav-items{
+        float: none;
+        height:auto;
+        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.363) ;
+    }
+
+    .drop-menu{
+        display: block;
+    }
+}

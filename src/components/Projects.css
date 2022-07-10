@@ -1,0 +1,9 @@
+.Projects{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height:300vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: linen;
+}

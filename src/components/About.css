@@ -1,0 +1,151 @@
+.About{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height:300vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*About Container 1*/
+
+.About-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    width: 100%;
+    height: 100vh;
+    background-color: linen;
+}
+
+.About-Summary {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     /* Margin = 11 makes box
+    perfectly aligned with navbar*/
+    width: 100%;
+    height: 80%;
+    background-color: white;
+
+}
+
+.Progress-drops{
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.About-Summary-Content {
+    margin: 0 10px;
+    width: 100%;
+}
+
+.About-Summary-Content > h2{
+    font-size: 4vw;
+}
+
+.About-Summary-Content > h1{
+    font-size: 6vw;
+    font-style: italic;
+}
+
+img{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tea-bag-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+
+/*About Container 2*/
+.About-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: linen;
+}
+
+
+/*About Container 3*/
+.About-container-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: linen;
+}
+
+
+@media screen and (max-width: 650px){
+
+    /*About Container 1*/
+
+    .About-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .Progress-drops{
+        display:none;
+    }
+
+    .About-Summary{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: linen;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About-Summary-Content {
+        padding-top: 8vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: linen;
+    }
+
+    .tea-bag-gif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: linen;
+        width: 100%;
+        padding-top: 5vh;
+    }
+
+    .About-Summary-Content > h2{
+        font-size: 5vw;
+    }
+    
+    .About-Summary-Content > h1{
+        font-size: 7vw;
+    }
+
+
+    /*About Container 2*/
+
+
+}
