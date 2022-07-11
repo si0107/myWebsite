@@ -22,11 +22,11 @@ function ProjectItem(props) {
 
   return (
     <div className='ProjectItem'>
-        <div className='ProjectItem-container'>
-            <div className='coffee'>
-                <img src={props.content[0]}/>
-            </div>
+        {/* <div className='ProjectItem-container'> */}
             <div className='project-card'>
+                <div className='coffee'>
+                    <img src={props.content[0]}/>
+                </div>
                 <div className='project-card-content'>
                     <div className='project-picture'>
                         {togglePic ? 
@@ -35,6 +35,7 @@ function ProjectItem(props) {
                     </div>
 
                     <div className='project-card-text'>
+                        <div className='project-title'>{props.content[7]}</div>
                         <div className='project-description'>{props.content[3]}</div>
                         <div className='project-lang'>{props.content[4]}</div>
                     </div>
@@ -47,7 +48,7 @@ function ProjectItem(props) {
                 </div>
             </div>
 
-        </div>
+        {/* </div> */}
     </div>
   )
 }

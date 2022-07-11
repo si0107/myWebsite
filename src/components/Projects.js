@@ -17,7 +17,7 @@ function Projects() {
                 <div className='Project1'>
                     <ProjectItem content={[espresso, capstoneML, HTespresso, 
                     'description of Capstone ML Project', 'Python', 
-                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug]}/>
+                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Title of Project']}/>
                 </div>
                 <div className='Project1'></div>
                 <div className='Project1'></div>

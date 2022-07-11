@@ -34,15 +34,22 @@
 }
 
 .Progress-drops{
-    width: 10%;
+    width: 100%;
+    display:flex;
     justify-content: center;
     align-items: center;
+    flex: 10%
 
 }
 
 .About-Summary-Content {
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    flex: 30%;
+    height: 100%;
 }
 
 .About-Summary-Content > h2{
@@ -52,6 +59,15 @@
 .About-Summary-Content > h1{
     font-size: 6vw;
     font-style: italic;
+    margin-right: 3vw;
+}
+
+.tea-bag-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 60%
 }
 
 img{
@@ -60,12 +76,7 @@ img{
     padding: 0;
 }
 
-.tea-bag-gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-}
+
 
 
 /*About Container 2*/

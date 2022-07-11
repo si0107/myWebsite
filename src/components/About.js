@@ -21,7 +21,7 @@ function About() {
                     </div>
                     <div className='About-Summary-Content'>
                         <h2>Hi, I'm Sarika and I'm...</h2>
-                        <h1>Brewing with <div style={{color:'maroon'}}>imagination!</div></h1>
+                        <h1>Brewing with <div style={{color:'maroon'}}><b>Imagination!</b></div></h1>
                     </div>
                     <div className='tea-bag-gif'>
                         <img src={teaBag} alt='tea-Bag' />

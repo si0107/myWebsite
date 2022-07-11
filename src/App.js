@@ -10,6 +10,11 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div>
+      <div>
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+</style>
+      </div>
       <Router>
         <Routes>
           <Route path = "/" element ={<About/>} />
