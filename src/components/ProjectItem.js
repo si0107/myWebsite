@@ -10,6 +10,7 @@ Props parameters:
     4: languages used [array format]
     5: github repo link
     6: github mug picture
+    7: title of project
 */}
 
 function ProjectItem(props) {
@@ -22,7 +23,7 @@ function ProjectItem(props) {
 
   return (
     <div className='ProjectItem'>
-        {/* <div className='ProjectItem-container'> */}
+        <div className='ProjectItem-container'>
             <div className='project-card'>
                 <div className='coffee'>
                     <img src={props.content[0]}/>
@@ -48,7 +49,7 @@ function ProjectItem(props) {
                 </div>
             </div>
 
-        {/* </div> */}
+        </div>
     </div>
   )
 }
