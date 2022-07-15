@@ -1,6 +1,6 @@
 .Projects{
     margin: 0;
-    height:350vh;
+    height:430vh;
     width: 100%;
     overflow: hidden;
     background-color: linen;
@@ -18,14 +18,16 @@
 }
 
 .Projects-container{
-    margin-top: 18vw;
+    margin-top: 2vw;
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 850px) {
     .Projects-container{
-        margin-top: 6vw;
+        margin-top: 3vw;
         display: flex;
         flex-direction: column;
     }
@@ -34,18 +36,20 @@
 @media screen and (max-height: 783px) and (min-width: 800px){
 
     .Projects-container{
-        margin-top: 6vw;
+        margin-top: 1vw;
         display: flex;
         flex-direction: column;
     }
 }
 
-#Project2{
+#Project2, #Project3, #Project4{
     margin-top: 5vw;
 }
 
 
-/*PROJECT 2 - CAPSTONE SWIFT*/
+/*****
+******PROJECT 2 - CAPSTONE SWIFT
+******/
 
 
 #Project2 .ProjectItem{
@@ -59,8 +63,8 @@
 }
 
 #Project2 .project-card{
-    height: 78vh;
-    width: 95vw;
+    /* height: 78vh;
+    width: 95vw; */
 }
 
 #Project2 .coffee{
@@ -69,14 +73,15 @@
 }
 
 #Project2 #projpic1{
-    width: 40%;
+    max-width: 100%;
+    height: auto;
 }
 
 
 
 #Project2 .coffee > img{
     width: 8vw;
-    height: 8vw;
+    /* height: 8vw; */
     transform: translateX(0.5vw);
 }
 
@@ -133,14 +138,17 @@
 
     #Project2 .project-picture{
         width: 94%;
-        height: 30%;
+        /* height: 30%; */
+        height: auto;
         flex:auto;
         padding: 0px;
     }
 
     #Project2 #projpic1{
-        width: 15%;
-        height: 100%;
+        max-width: 30%;
+        /* height: 100%; */
+        height: auto;
+        flex: auto;
     }
 
     #Project2 .project-link {
@@ -186,7 +194,6 @@
     }
 
     #Project2 .project-picture{
-        height:100%;
         border: 0.3vw solid rgb(75, 38, 38);
         align-self: center;
         justify-self: center;
@@ -201,7 +208,10 @@
     }
 
     #Project2 .project-picture > img {
-        height: 100%;
+        /* height: 100%; */
+        max-height: 100%;
+        width: auto;
+        width: auto\9; /* ie8 */
     }
 
     #Project2 .project-card-text{
@@ -356,6 +366,624 @@
         }
         
         #Project2 .project-lang::before{
+            content: "LANGUAGES: ";
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+}
+
+
+/*****
+******PROJECT 3 - Flutter Web
+******/
+
+#Project3 .coffee{
+    padding: 0.75vw;
+
+}
+
+#Project3 .coffee > img{
+    width: 6vw;
+    height: auto;
+}
+
+#Project3 .project-picture > img{
+    max-width: 100%;
+    height: auto;
+}
+
+#Project3 .project-picture{
+    flex: 70%;
+}
+
+#Project3 .project-card-text{
+    flex: 30%;
+}
+
+#Project3 .project-card-content{
+    transform: translateY(-3vw);
+}
+
+#Project3 .project-link{
+    transform: translateY(-3vw);
+}
+
+
+/* NARROW COLUMN*/
+@media screen and (max-width: 850px) {
+    
+    #Project3 .coffee{
+        transform: translateY(-11vw);
+    }
+    #Project3 .coffee > img{
+        width: 11vw;
+        height: auto;
+        padding: 1vw;
+    }
+
+    #Project3 .project-card-content{
+        transform: translateY(-11vw);
+    }
+
+    #Project3 .project-picture{
+        max-width: 94%;
+        height: auto;
+        flex:50%;
+        padding: 0px;
+    }
+
+    #Project3 .project-card-text{
+        flex: 50%;
+    }
+
+    #Project3 #projpic1{
+        max-height: 100%;
+        width: auto;
+        flex: auto;
+    }
+
+    #Project3 #HTcoffee{
+        max-width: 50%;
+        height: auto;
+    }
+
+    #Project3 .project-link {
+        height: 8vh;
+        transform: translateY(-5vw);
+    }
+}
+
+/* WIDE SCREEN NARROW HEIGHT*/
+
+@media screen and (max-height: 650px) and (min-width: 800px) {
+
+    #Project3 .ProjectItem-container{
+        height: 80%;
+        padding-top: 8vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Project3 .coffee{
+        flex:auto;
+        transform: translateY(0vw);
+        border: 0.3vw solid rgb(53, 11, 11);
+        margin: 0 0.5vw;
+    }
+
+    #Project3 .coffee > img{
+        width: 5vw;
+        height: auto;
+    }
+
+    #Project3 .project-card-content{
+        flex:auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: 90%;
+        width: 100%;
+        transform: translateY(0vw);
+    }
+
+    #Project3 .project-picture{
+        border: 0.3vw solid rgb(75, 38, 38);
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5vw;
+    }
+
+    #Project3 .project-picture > img {
+        /* height: 100%; */
+
+        max-height: 100%;
+        width: auto;
+        width: auto\9; /* ie8 */
+    }
+
+    #Project3 .project-card-text{
+        flex:auto;
+        border: 0.3vw solid rgb(75, 38, 38);
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Project3 .project-link {
+        height: 4vw;
+        border: 0.3vw solid rgb(75, 38, 38);
+        margin: 0 0.3vw;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        transform: translateY(0vw);
+
+    }
+
+    #Project3 .project-link > a > img{
+        height:4vw;
+        transform:translateX(0);
+    }
+}
+
+
+@media screen and (max-height: 600px) and (max-width: 850px){
+
+    #Project3 .ProjectItem-container{
+        height: 80%;
+        padding-top: 8vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Project3 .project-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 0.3vw solid rgb(53, 11, 11);
+    }
+
+    #Project3 .coffee{
+        flex:auto;
+        transform: translateY(0vw);
+        border: 0.3vw solid rgb(53, 11, 11);
+        margin: 0 0.5vw;
+    }
+
+    #Project3 .coffee > img{
+        width: 5vw;
+        height: 5vw;
+        transform: translateX(0vw);
+    }
+
+    #Project3 .project-card-content{
+        
+        transform: translateY(0vw);
+
+        flex:auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: 90%;
+        width: 100%;
+    }
+
+    #Project3 .project-link{
+        flex:auto;
+    }
+
+    #Project3 .project-picture{
+        height:100%;
+        flex: auto;
+        border: 0.3vw solid rgb(75, 38, 38);
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5vw;
+    }
+
+    #Project3 .project-picture > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 2vw;
+    }
+
+    #Project3 .project-card-text{
+        border: 0.3vw solid rgb(75, 38, 38);
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Project3 .project-link {
+        height: 3vw;
+        border: 0.3vw solid rgb(75, 38, 38);
+        margin: 0 0.3vw;
+        transform:translateX(0);
+    }
+
+    #Project3 .project-link > a > img{
+        height:3vw;
+    }
+
+
+    @media screen and (max-height: 600px) and (max-width: 850px){
+        
+        #Project3 .project-picture{
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #Project3 .project-picture > img{
+            width: auto;
+            max-height: 100%;
+        }
+
+        #Project3 .project-title{
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        
+        }
+
+        #Project3 .project-description{
+            font-size: 14px;
+            text-indent: 10px;
+        }
+        
+        #Project3 .project-lang{
+            margin-top: auto;
+        }
+        
+        #Project3 .project-lang::before{
+            content: "LANGUAGES: ";
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+}
+
+
+/*****
+******PROJECT 4 - Game Engines
+******/
+
+#Project4 .coffee{
+    padding: 0.75vw;
+
+}
+
+#Project4 .coffee > img{
+    width: 6vw;
+    height: auto;
+}
+
+#Project4 .project-picture > img{
+    max-width: 100%;
+    height: auto;
+}
+
+#Project4 .project-picture{
+    flex: 60%;
+}
+
+#Project4 .project-card-text{
+    flex: 40%;
+}
+
+#Project4 .project-card-content{
+    transform: translateY(-3vw);
+}
+
+#Project4 .project-link{
+    transform: translateY(-3vw);
+}
+
+#Project4 .project-link{
+    padding: 0;
+}
+
+#Project4 .project-link {
+    height: 8%;
+    transform: translateY(-2vw);
+}
+
+#Project4 .project-link > a > img{
+    transform:translateX(0px);
+}
+
+/* NARROW COLUMN*/
+@media screen and (max-width: 850px) {
+    
+    #Project4 .coffee{
+        transform: translateY(-5vw);
+    }
+    #Project4 .coffee > img{
+        width: 11vw;
+        height: auto;
+        padding: 1vw;
+    }
+
+    #Project4 .project-card-content{
+        transform: translateY(-4vw);
+    }
+
+    #Project4 .project-picture{
+        max-width: 94%;
+        max-height: 50%;
+        flex:40%;
+        padding: 0px;
+    }
+
+    #Project4 .project-card-text{
+        flex: 60%;
+    }
+
+    #Project4 #projpic1{
+        max-height: 100%;
+        width: auto;
+        flex: auto;
+    }
+
+    #Project4 #HTcoffee{
+        max-height: 100%;
+        width: auto;
+    }
+
+    #Project4 .project-link {
+
+        padding: 0;
+        margin-top: auto;
+        height: 8vh;
+        transform: translateY(-4.5vw);
+    }
+
+    #Project4 .project-link > a > img{
+        max-height: 8vh;
+        width: auto;
+        height: auto\9; /* ie8 */
+        flex: auto;
+    }
+    
+}
+
+/* WIDE SCREEN NARROW HEIGHT*/
+
+@media screen and (max-height: 650px) and (min-width: 800px) {
+
+    #Project4 .ProjectItem-container{
+        height: 80%;
+        padding-top: 8vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Project4 .coffee{
+        flex:auto;
+        transform: translateY(0vw);
+        border: 0.3vw solid rgb(53, 11, 11);
+        margin: 0 0.5vw;
+    }
+
+    #Project4 .coffee > img{
+        width: 5vw;
+        height: auto;
+    }
+
+    #Project4 .project-card-content{
+        flex:auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: 90%;
+        width: 100%;
+        transform: translateY(0vw);
+    }
+
+    #Project4 .project-picture{
+        border: 0.3vw solid rgb(75, 38, 38);
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5vw;
+    }
+
+    #Project4 .project-picture > img {
+        /* height: 100%; */
+
+        max-height: 100%;
+        width: auto;
+        width: auto\9; /* ie8 */
+    }
+
+    #Project4 .project-card-text{
+        flex:auto;
+        border: 0.3vw solid rgb(75, 38, 38);
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Project4 .project-link {
+        height: 4vw;
+        border: 0.3vw solid rgb(75, 38, 38);
+        margin: 0 0.3vw;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        transform: translateY(0vw);
+
+    }
+
+    #Project4 .project-link > a > img{
+        height:4vw;
+        transform:translateX(0);
+    }
+}
+
+
+@media screen and (max-height: 600px) and (max-width: 850px){
+
+    #Project4 .ProjectItem-container{
+        height: 80%;
+        padding-top: 8vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Project4 .project-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 0.3vw solid rgb(53, 11, 11);
+    }
+
+    #Project4 .coffee{
+        flex:auto;
+        transform: translateY(0vw);
+        border: 0.3vw solid rgb(53, 11, 11);
+        margin: 0 0.5vw;
+    }
+
+    #Project4 .coffee > img{
+        width: 5vw;
+        height: 5vw;
+        transform: translateX(-0.5vw);
+    }
+
+    #Project4 .project-card-content{
+        
+        transform: translateY(0vw);
+
+        flex:auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: 90%;
+        width: 100%;
+    }
+
+    #Project4 .project-link{
+        flex:auto;
+    }
+
+    #Project4 .project-picture{
+        max-height:100%;
+        width: auto;
+        flex: auto;
+        border: 0.3vw solid rgb(75, 38, 38);
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5vw;
+    }
+
+    #Project4 .project-picture > img {
+        max-height: 100;
+        width: auto;
+        flex: auto;
+    }
+
+    #Project4 .project-card-text{
+        border: 0.3vw solid rgb(75, 38, 38);
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Project4 .project-link {
+        height: 3vw;
+        border: 0.3vw solid rgb(75, 38, 38);
+        margin: 0 0.3vw;
+        transform:translateX(0);
+    }
+
+    #Project4 .project-link > a > img{
+        height:3vw;
+    }
+
+
+    @media screen and (max-height: 600px) and (max-width: 850px){
+        
+        #Project4 .project-picture{
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+        /*Edit this*/
+        #Project4 .project-picture > img{
+            width: auto;
+            max-height: 100%;
+        }
+
+        #Project4 .project-title{
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        
+        }
+
+        #Project4 .project-description{
+            font-size: 14px;
+            text-indent: 10px;
+        }
+        
+        #Project4 .project-lang{
+            margin-top: auto;
+        }
+        
+        #Project4 .project-lang::before{
             content: "LANGUAGES: ";
             font-weight: bold;
             font-size: 14px;

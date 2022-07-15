@@ -9,7 +9,7 @@
     overflow: hidden;
     margin: 0;
     background-color: darksalmon;
-    height: auto;
+    height: 43px;
     padding: 0;
 }
 
@@ -40,7 +40,12 @@ li:hover{
 }
 
 #home::after {
-    content: " - Sarika Islam"
+    content: " Sarika Islam"
+}
+
+.icon{
+    width: 22px;
+    transform: translateY(5px);
 }
 
 .drop-menu{

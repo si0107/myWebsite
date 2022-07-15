@@ -11,6 +11,14 @@ import coffeeAndCode from '../images/coffeeAndCodeMug.png';
 import capp from '../images/cappucino.png';
 import movieRec from '../images/movieRec.png';
 import HTcapp from '../images/HTcappuccino.png';
+import HTfrapp from '../images/HTfrappe.png';
+import frapp from '../images/frappe.png';
+import flutterweb from '../images/flutterweb.png';
+import icedCoffee from '../images/icedCoffee.png';
+import HTicedCoffee from '../images/HTicedCoffee.png';
+import gameEngine from '../images/gameEngines.png';
+
+
 
 function Projects() {
     return(
@@ -34,9 +42,15 @@ function Projects() {
 
 
                 <div className='Actual-Project' id='Project3'>
-                    <ProjectItem content={[espresso, capstoneML, HTespresso, 
-                    'description of Capstone ML Project', 'Python', 
-                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Title of Project']}/>
+                    <ProjectItem content={[frapp, flutterweb, HTfrapp, 
+                    'description of flutter website', 'Flutter, Dart', 
+                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Budget Tracker']}/>
+                </div>
+
+                <div className='Actual-Project' id='Project4'>
+                    <ProjectItem content={[icedCoffee, gameEngine, HTicedCoffee, 
+                    'description of game', 'Flutter, Dart', 
+                    'https://github.com/si0107/S22_Game_Engines', coffeeAndCode, 'Game Engines']}/>
                 </div>
             </div>
 

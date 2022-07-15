@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { useNavigate } from "react-router-dom";
 import './Navbar.css'
 
+import icon from '../images/favicon.ico';
+
 function Navbar() {
 
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -36,11 +38,13 @@ function Navbar() {
   return (
     <div className='navbar-container'>
       <nav className='navbar'>
-          <li className='list' id='home'>SI</li>
+          <div>
+            <li onClick={() => redirectPage("/")} className='list' id='home'><img className='icon' src={icon}></img></li>
+          </div>
           { (toggleMenu || (screenWidth > 530)) && (
           <ul className='list'>
             <li className='nav-items' onClick={() => redirectPage("/Contact")} >Contact</li>
-            <li className='nav-items' onClick={() => redirectPage("/References")}>References</li>
+            {/* <li className='nav-items' onClick={() => redirectPage("/References")}>References</li> */}
             <li className='nav-items' onClick={() => redirectPage("/Projects")}>Projects</li>
             <li className='nav-items' onClick={() => redirectPage("/")} >About</li>
           </ul>

@@ -43,6 +43,13 @@ function About() {
                     <p>-Electives-</p>
                 </div>
             </div>
+            <div className='About-container-4'>
+                <div className='About-Me-Summary'>
+                    <h2>References</h2>
+                    <p>-how they help me-</p>
+                    <p>-Electives-</p>
+                </div>
+            </div>
         </div>
     );
 }
