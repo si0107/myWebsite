@@ -30,7 +30,7 @@ function Projects() {
                 <div className='Actual-Project' id='Project1'>
                     <ProjectItem content={[espresso, capstoneML, HTespresso, 
                     'description of Capstone ML Project', 'Python', 
-                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Machine Learning: Movie Recommender']}/>
+                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Movie Recommender']}/>
                 </div>
 
 

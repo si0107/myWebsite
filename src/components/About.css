@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.About-nav {
+    animation: nav-load 300ms ease-in;
+}
+
 /*About Container 1*/
 
 .About-container{
@@ -30,6 +34,7 @@
     width: 100%;
     height: 80%;
     background-color: white;
+    overflow: hidden;
 
 }
 
@@ -157,6 +162,15 @@ img{
 
 
     /*About Container 2*/
+}
 
 
+@keyframes nav-load {
+    0% {
+        transform: translate(-100%, -100%)
+    }
+
+    100% {
+        transform: translate (0)
+    }
 }
