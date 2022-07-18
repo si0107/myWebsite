@@ -43,7 +43,8 @@ function Navbar() {
           </div>
           { (toggleMenu || (screenWidth > 530)) && (
           <ul className='list'>
-            <li className='nav-items' onClick={() => redirectPage("/Contact")} >Contact</li>
+            {/* <li className='nav-items' onClick={() => redirectPage("/Contact")} >Contact</li> */}
+            <a href="mailto: sarikaislam.02@gmail.com"><li className='nav-items'>Contact</li></a>
             {/* <li className='nav-items' onClick={() => redirectPage("/References")}>References</li> */}
             <li className='nav-items' onClick={() => redirectPage("/Projects")}>Projects</li>
             <li className='nav-items' onClick={() => redirectPage("/")} >About</li>

@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './ProjectItem.css';
+import { Howl } from 'howler';
+import drink from '../images/minecraft-drinking-sound-effect.mp3';
 
 {/**
 Props parameters:
@@ -21,6 +23,16 @@ function ProjectItem(props) {
         setTogglePic(!togglePic)
     }
 
+    const playSound = (src) => {
+        const sound = new Howl({
+            src,
+            volume: 0.3,
+        });
+
+        sound.play();
+        setTogglePic(!togglePic);
+    };
+
   return (
     <div className='ProjectItem'>
         <div className='ProjectItem-container'>
@@ -35,7 +47,7 @@ function ProjectItem(props) {
                     <div className='project-picture'>
                         {togglePic ? 
                         <img id= 'projpic1' onClick= {toggleProjPic} src={props.content[1]}/> : 
-                        <img id= 'HTcoffee' onClick= {toggleProjPic} src={props.content[2]}/>}
+                        <img id= 'HTcoffee' onClick= {() => playSound(drink)} src={props.content[2]}/>}
                     </div>
 
                     <div className='project-card-text'>

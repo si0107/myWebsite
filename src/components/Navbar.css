@@ -20,14 +20,14 @@
     justify-content: center;
 }
 
-li {
+.nav-items, #home{
     float: right;
     color: maroon;
     padding: 10px 15px;
     font-weight: bold;
 }
 
-li:hover{
+.nav-items:hover, #home:hover{
     cursor: pointer;
     background-color: rgba(182, 88, 57, 0.808);
     color: white;

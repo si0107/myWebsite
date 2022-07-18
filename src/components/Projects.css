@@ -61,11 +61,11 @@
 @media screen and (max-width: 1100px){
     
     #Project2 .coffee{
-        transform: translateY(-8vh);
+        /* transform: translateY(-8vh); */
     }
 
     #Project2 .coffee > img{
-        width: 7vw;
+        width: 8.5vw;
         transform: translate(0.25vw, 0.75vw);
     }
 }
