@@ -46,7 +46,7 @@ function Navbar() {
             {/* <li className='nav-items' onClick={() => redirectPage("/Contact")} >Contact</li> */}
             <a href="mailto: sarikaislam.02@gmail.com" id='contact'><li className='nav-items'>Contact</li></a>
             {/* <li className='nav-items' onClick={() => redirectPage("/References")}>References</li> */}
-            <li className='nav-items' onClick={() => redirectPage("/Projects")}>Projects</li>
+            <li className='nav-items' onClick={() => redirectPage("/Projects/")}>Projects</li>
             <li className='nav-items' onClick={() => redirectPage("/")} >About</li>
           </ul>
           )}
