@@ -59,7 +59,11 @@
     width: 10%;
 }
 
-@media screen and (max-width: 650px){
+.list > a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
 
     #home::after {
         display:none;
@@ -68,11 +72,12 @@
 }
 
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 600px){
     .navbar{
         display: flex;
         height: auto;
         flex-direction: column;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.363) ;
     }
 
     .list {

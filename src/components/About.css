@@ -110,9 +110,9 @@ img{
 }
 
 /*About Container 2*/
-.About-container-2 {
+.About-Me-Description {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -120,27 +120,66 @@ img{
     background-color: linen;
 }
 
-
-/*About Container 3*/
-.About-container-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: linen;
-}
-
-/*About Container 3*/
 .About-container-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.About-container-2, .About-container-3{
+    margin: 20vw;
+    margin-left: 25vw;
+}
+
+.About-container-2 > p, .About-container-3 > p{
+    text-indent: 5vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.header{
+    font-size: 52px;
+    margin: 0;
+}
+
+.table{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: linen;
+}
+
+.table-column {
+    width: 50%;
+    font-size: 24px;
+}
+
+.table-column > ul > li {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.ref-list{
+    list-style-image: url('../images/beanLeft2.png');
+    font-size:larger;
+}
+
+.ref-list > a{
+    color:rgb(128, 62, 0);
+}
+
+.ref-list > a:visited{
+    color: maroon;
+}
+
+.ref-list > a:hover{
+    font-weight: bold;
+    list-style-image: url('../images/beanRight2.png');
 }
 
 .Footer {
@@ -163,7 +202,8 @@ img{
 
 .Footer > a {
     z-index: 12;
-    align-self: flex-end;
+    align-self: center;
+    transform: translateY(1vw);
 }
 
 .Footer > a > svg:hover{
@@ -308,6 +348,48 @@ img{
 
 
     /*About Container 2*/
+
+    .header{
+        text-align: center;
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .About-container-2 > p, .About-container-3 > p{
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .table{
+        flex-direction: column;
+    }
+
+    .table-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table-column > h2{
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .table-column > ul > li{
+        font-size: 16px;
+    }
+
+    .github{
+        transform:translateX(20vw)
+    }
+
+    .linkedin{
+        transform:translateX(-20vw)
+    }
+
 }
 
 

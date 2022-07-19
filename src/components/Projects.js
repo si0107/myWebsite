@@ -29,7 +29,7 @@ function Projects() {
             <div className='Projects-container'>
                 <div className='Actual-Project' id='Project1'>
                     <ProjectItem content={[espresso, capstoneML, HTespresso, 
-                    'description of Capstone ML Project', 'Python', 
+                    'For our movie recommender I had tested two different types of ML algorithms to calculate similarities between movies: K-Means and Cosine Similarity. I had done the data collection by using the Imdb API to retrieve contents of every movie listed.', 'Python', 
                     'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Movie Recommender']}/>
                 </div>
 

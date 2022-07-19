@@ -274,6 +274,7 @@
     }
 
     .coffee{
+        display: none;  
         flex:auto;
         transform: translateY(0vw);
         border: 0.3vw solid rgb(53, 11, 11);
@@ -358,6 +359,7 @@
     }
 
     .coffee{
+        display: none; 
         flex:auto;
         transform: translateY(0vw);
         border: 0.3vw solid rgb(53, 11, 11);

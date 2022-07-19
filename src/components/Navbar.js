@@ -41,10 +41,10 @@ function Navbar() {
           <div>
             <li onClick={() => redirectPage("/")} className='list' id='home'><img className='icon' src={icon}></img></li>
           </div>
-          { (toggleMenu || (screenWidth > 530)) && (
+          { (toggleMenu || (screenWidth > 600)) && (
           <ul className='list'>
             {/* <li className='nav-items' onClick={() => redirectPage("/Contact")} >Contact</li> */}
-            <a href="mailto: sarikaislam.02@gmail.com"><li className='nav-items'>Contact</li></a>
+            <a href="mailto: sarikaislam.02@gmail.com" id='contact'><li className='nav-items'>Contact</li></a>
             {/* <li className='nav-items' onClick={() => redirectPage("/References")}>References</li> */}
             <li className='nav-items' onClick={() => redirectPage("/Projects")}>Projects</li>
             <li className='nav-items' onClick={() => redirectPage("/")} >About</li>
