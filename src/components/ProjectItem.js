@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './ProjectItem.css';
+import { Howl } from 'howler';
+import drink from '../images/minecraft-drinking-sound-effect.mp3';
 
 {/**
 Props parameters:
@@ -10,6 +12,7 @@ Props parameters:
     4: languages used [array format]
     5: github repo link
     6: github mug picture
+    7: title of project
 */}
 
 function ProjectItem(props) {
@@ -20,21 +23,35 @@ function ProjectItem(props) {
         setTogglePic(!togglePic)
     }
 
+    const playSound = (src) => {
+        const sound = new Howl({
+            src,
+            volume: 0.3,
+        });
+
+        sound.play();
+        setTogglePic(!togglePic);
+    };
+
   return (
     <div className='ProjectItem'>
         <div className='ProjectItem-container'>
             <div className='coffee'>
-                <img src={props.content[0]}/>
-            </div>
+                    <img src={props.content[0]}/>
+                </div>
             <div className='project-card'>
+                {/* <div className='coffee'>
+                    <img src={props.content[0]}/>
+                </div> */}
                 <div className='project-card-content'>
                     <div className='project-picture'>
                         {togglePic ? 
                         <img id= 'projpic1' onClick= {toggleProjPic} src={props.content[1]}/> : 
-                        <img id= 'HTcoffee' onClick= {toggleProjPic} src={props.content[2]}/>}
+                        <img id= 'HTcoffee' onClick= {() => playSound(drink)} src={props.content[2]}/>}
                     </div>
 
                     <div className='project-card-text'>
+                        <div className='project-title'>{props.content[7]}</div>
                         <div className='project-description'>{props.content[3]}</div>
                         <div className='project-lang'>{props.content[4]}</div>
                     </div>

@@ -2,9 +2,29 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    height:300vh;
+    height:400vh;
     width: 100%;
     overflow: hidden;
+}
+
+.About-nav {
+    animation: nav-load 300ms ease-in;
+    z-index: 20;
+}
+
+.Progress{
+    position:fixed;
+    z-index: 1;
+    top: 37%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Progress > img{
+    width: 10vw;
+    padding-left:1vw;
 }
 
 /*About Container 1*/
@@ -30,28 +50,52 @@
     width: 100%;
     height: 80%;
     background-color: white;
+    overflow: hidden;
 
 }
 
 .Progress-drops{
-    width: 10%;
+    width: 100%;
+    display:flex;
     justify-content: center;
     align-items: center;
-
+    flex: 10%;
+    padding: 1vw;
 }
 
+.Progress-drops > img{
+    opacity: 0;
+}
+
+
+
 .About-Summary-Content {
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    flex: 30%;
+    height: 100%;
+    margin-left: 1vw;
 }
 
 .About-Summary-Content > h2{
-    font-size: 4vw;
+    font-size: 3.8vw;
 }
 
 .About-Summary-Content > h1{
     font-size: 6vw;
     font-style: italic;
+    margin-right: 3vw;
+}
+
+.tea-bag-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 60%
 }
 
 img{
@@ -60,18 +104,15 @@ img{
     padding: 0;
 }
 
-.tea-bag-gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
+#img1{
+    transform:rotate(29deg) translate(-4vw, 3vw);
+    
 }
-
 
 /*About Container 2*/
-.About-container-2 {
+.About-Me-Description {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -79,18 +120,175 @@ img{
     background-color: linen;
 }
 
+.About-container-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-/*About Container 3*/
-.About-container-3 {
+}
+
+.About-container-2, .About-container-3{
+    margin: 20vw;
+    margin-left: 25vw;
+}
+
+.About-container-2 > p, .About-container-3 > p{
+    text-indent: 5vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.header{
+    font-size: 52px;
+    margin: 0;
+}
+
+.table{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: linen;
 }
 
+.table-column {
+    width: 50%;
+    font-size: 24px;
+}
+
+.table-column > ul > li {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.ref-list{
+    list-style-image: url('../images/beanLeft2.png');
+    font-size:larger;
+}
+
+.ref-list > a{
+    color:rgb(128, 62, 0);
+}
+
+.ref-list > a:visited{
+    color: maroon;
+}
+
+.ref-list > a:hover{
+    font-weight: bold;
+    list-style-image: url('../images/beanRight2.png');
+}
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.coffeeload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffeeload > img{
+    max-height: 5vw;
+    padding: 1vw;
+}
+
+.Footer > a {
+    z-index: 12;
+    align-self: center;
+    transform: translateY(1vw);
+}
+
+.Footer > a > svg:hover{
+    z-index: 12;
+    background-color: rgba(250, 131, 131, 0.616);
+    box-shadow:0 0 50px 5px rgb(255, 143, 143);
+    color: white;
+}
+
+.coffeeload > div {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    font-size:larger;
+    font-weight: bold;
+    color:maroon;
+}
+
+.github{
+    opacity:1;
+    filter: blur(0px);
+    animation: fade-in 8s 0s backwards cubic-bezier(0.11, 0, 0.5, 0) infinite;
+
+    transform:translateX(1.75vw)
+}
+
+
+.linkedin {
+    opacity:0;
+    filter: blur(6px);
+    animation: fade-in-linked 8s 0s backwards cubic-bezier(0.11, 0, 0.5, 0) infinite;
+
+    transform:translateX(-1.75vw)
+}
+
+@keyframes fade-in {
+    15% {
+        opacity: 0;
+        filter: blur(6px);
+    }
+
+    82% {
+        opacity: 0;
+        filter: blur(6px);
+    }
+
+    94% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    100% {
+        opacity:1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes fade-in-linked {
+    27% {
+        opacity: 0;
+        filter: blur(6px);
+    }
+
+    44% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    67% {
+        opacity:0;
+        filter: blur(6px);
+    }
+
+    100% {
+        opacity:0;
+        filter: blur(6px);
+    }
+
+}
+  
 
 @media screen and (max-width: 650px){
 
@@ -105,6 +303,10 @@ img{
     }
 
     .Progress-drops{
+        display:none;
+    }
+
+    .Progress{
         display:none;
     }
 
@@ -147,5 +349,56 @@ img{
 
     /*About Container 2*/
 
+    .header{
+        text-align: center;
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+    }
 
+    .About-container-2 > p, .About-container-3 > p{
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .table{
+        flex-direction: column;
+    }
+
+    .table-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table-column > h2{
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .table-column > ul > li{
+        font-size: 16px;
+    }
+
+    .github{
+        transform:translateX(20vw)
+    }
+
+    .linkedin{
+        transform:translateX(-20vw)
+    }
+
+}
+
+
+@keyframes nav-load {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
 }
