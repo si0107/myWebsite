@@ -29,28 +29,28 @@ function Projects() {
             <div className='Projects-container'>
                 <div className='Actual-Project' id='Project1'>
                     <ProjectItem content={[espresso, capstoneML, HTespresso, 
-                    'For our movie recommender I had tested two different types of ML algorithms to calculate similarities between movies: K-Means and Cosine Similarity. I had done the data collection by using the Imdb API to retrieve contents of every movie listed.', 'Python', 
+                    'Used the TMDB API to create a movie dataset. Used this dataset to train a content-based machine learning model to recommend movies based on a list of liked movies. Compared and tested K-Means and Cosine Similarity based models using the Principal Component Analysis, Elbow Method and Silhouette Method. The final model was then hosted on Heroku.', 'Python', 
                     'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Movie Recommender']}/>
                 </div>
 
 
                 <div className='Actual-Project' id='Project2'>
                     <ProjectItem content={[capp, movieRec, HTcapp, 
-                    'description of Capstone Swift Project', 'Swift', 
-                    'https://github.com/XLG123/Movie_Recommender', coffeeAndCode, 'Movie Recommender App']}/>
+                    'Created the Recommendation screen that displays the contents of all recommended movies and allow users to add them to their watchlists. Recommendations are retrieved from my Movie Recommender ML Model using a RestAPI', 'Swift', 
+                    'https://github.com/XLG123/Movie_Recommender', coffeeAndCode, 'Moovie Milkers']}/>
                 </div>
 
 
                 <div className='Actual-Project' id='Project3'>
                     <ProjectItem content={[frapp, flutterweb, HTfrapp, 
-                    'description of flutter website', 'Flutter, Dart', 
-                    'https://github.com/si0107/ML_Movie_Recommender/tree/master', codeMug, 'Budget Tracker']}/>
+                    'Worked with a team to develop an app that utilizes the Flutter Calendar widget to create and display events. Events are saved to and retrieved from firebase. Used firebase authentication to authenticate emails and google accounts used to create accounts for the app', 'Flutter, Dart', 
+                    'https://github.com/si0107/EventTracker', codeMug, 'Event Tracker']}/>
                 </div>
 
                 <div className='Actual-Project' id='Project4'>
                     <ProjectItem content={[icedCoffee, gameEngine, HTicedCoffee, 
-                    'description of game', 'Flutter, Dart', 
-                    'https://github.com/si0107/S22_Game_Engines', coffeeAndCode, 'Game Engines']}/>
+                    'Built a game engine alongside my class using the glfw library to create a graphical window and stb library to use create, shade and render sprites. Created our own classes to utilize the libraries and practice information hiding.', 'Flutter, Dart', 
+                    'https://github.com/si0107/S22_Game_Engines', coffeeAndCode, 'Coin Collector']}/>
                 </div>
             </div>
 
